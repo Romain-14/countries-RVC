@@ -1,0 +1,31 @@
+<main id="home">
+	<% for(data of datas){ %>
+
+	<article>
+		<header>
+			<h2><%= data.label %></h2>
+			<% if(data.picture?.flag) {%>
+			<div class="flag">
+				<img src="/images/flag/<%= data.picture.flag%>" alt="" />
+			</div>
+			<% } %>
+		</header>
+
+		<p>Culinary speciality : <%= data.recipe %></p>
+		<div class="picture">
+            <% if(data.picture.country) {%>
+			<img src="/images/country/<%= data.picture.country%>" alt="" />
+			<% } else { %>
+
+			<img src="/images/not-found.png" alt="" />
+
+			<% } %>
+		</div>
+
+		<a href="/country/<%= data.id%>" class="cta link">Read more</a>
+	</article>
+
+	<hr />
+
+	<% } %>
+</main>

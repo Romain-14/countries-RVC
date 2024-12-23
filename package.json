@@ -1,0 +1,19 @@
+{
+  "name": "03-countries-rvc",
+  "version": "1.0.0",
+  "description": "Modifier le fichier json pour ajouter les icônes des pays (<https://www.flaticon.com/packs/countrys-flags>).\r Ajouter une image de la recette du pays.\r **Les photos sont ajoutés manuellement dans le dossier public**",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "jsonfile": "^6.1.0"
+  }
+}
